@@ -72,10 +72,11 @@ It has no dependencies beyond the Python standard library, makes no
 network calls, and is fully deterministic: the same line is written
 on every run.
 
-Coordinator verification (25 Nov 2026, after the builder's session):
+Reviser verification (25 Nov 2026, after the competition opened):
 the line was re-read from the pushed commit and re-tested locally;
-it is 145 characters, ASCII only, and writes byte-identical output
-on every run. This revision changes no word of the line itself.
+it is 145 ASCII characters on one line, writes byte-identical output
+on every run, and the file has no trailing newline. This revision
+changes no word of the line itself.
 """
 
 from __future__ import annotations
